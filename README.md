@@ -34,10 +34,10 @@ cat barcode*/*.fastq > BIC1A_sample.fastq
 
 Now that you have combined the reads into 1 file, you can begin the ulana pipeline. Choose the command that matches your group's genome:
 ```
-ulana -q 8 -l 1000 -c 4 -i BIC40_sample.fastq -b r941_min_fast_g507
-ulana -q 8 -l 1000 -c 4 -i BIC9C_sample.fastq -b r941_min_fast_g507
+ulana -q 8 -l 1000 -c 8 -i BIC40_sample.fastq -b r941_min_fast_g507
+ulana -q 8 -l 1000 -c 8 -i BIC9C_sample.fastq -b r941_min_fast_g507
 ulana -q 8 -l 1000 -c 4 -i K61_sample.fastq -b r941_min_fast_g507
-ulana -q 9 -l 1000 -c 4 -i BIC1A_sample.fastq -b r941_min_hac_g507
+ulana -q 9 -l 1000 -c 12 -i BIC1A_sample.fastq -b r941_min_hac_g507
 ```
 
 IMPORTANT: The Ropro analysis might take a little while, to get around this when it gets to this part hit "Ctrl + c" to cancel the pipeline and rerun the command above. It will extract the 16S gene and you can BLAST it manually yourself.
