@@ -1,27 +1,12 @@
-# Congen_2023 WGS Codespace template
+# Congen_2023 WGS Instructions
 
-This is the the repository where a subsample of WGS is availible
-There are 3 directories in the current repository:
-1) BIC40
-2) BIC9C
-3) K61
-4) BIC1A
+Use these instructions to perform a genome assembly using a sample dataset of your genome.
 
-Each of these repositories contain a subset of the basecalled fastq data from their respective sequencing runs. 
+First you are going to open a terminal on the laptop. Go to the search bar in the bottom left and type "terminal" and open the application called terminal.
 
-You will use this as a template to generate a new codespace specifically for this project.
-Once you are in the code space you will do the following:
-
+Once you are in the terminal, execute the following code to get into the docker container:
 ```
-docker pull ethill/ulana:dev
-```
-
-Choose one depending on your group:
-```
-docker run --name=BIC40_analysis --volume=/workspaces/congen_2023_wgs/BIC40:/home/data -it ethill/ulana:dev
-docker run --name=BIC9C_analysis --volume=/workspaces/congen_2023_wgs/BIC9C:/home/data -it ethill/ulana:dev
-docker run --name=K61_analysis --volume=/workspaces/congen_2023_wgs/K61:/home/data -it ethill/ulana:dev
-docker run --name=BIC1A_analysis --volume=/workspaces/congen_2023_wgs/BIC1A:/home/data -it ethill/ulana:dev
+docker exec -it genome_demo bash
 ```
 
 Navigate to the data:
